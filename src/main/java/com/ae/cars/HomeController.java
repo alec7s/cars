@@ -18,7 +18,7 @@ public class HomeController {
 
     @RequestMapping("/")
     public String listCars(Model model){
-        model.addAttribute("car", carRepository.findAll());
+        model.addAttribute("cars", carRepository.findAll());
         return "list";
     }
     @GetMapping("/add")

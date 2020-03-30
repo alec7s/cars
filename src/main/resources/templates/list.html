@@ -15,8 +15,8 @@
         <td>Actions</td>
     </tr>
     <tr th:each="car : ${cars}">
-        <td th:text="${car.model}"></td>
         <td th:text="${car.make}"></td>
+        <td th:text="${car.model}"></td>
         <td th:text="${car.year}"></td>
         <td>
             <a th:href="@{/update/{id}(id=${car.id})}">Update</a>
